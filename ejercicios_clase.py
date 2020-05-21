@@ -111,13 +111,13 @@ def ej2():
         print("Copia texto 1 es diferente a texto 2")
     else:
         print("Copia texto 1 y texto 2 son iguales")
-        
+
 def ej3():
     # Ejercicios de práctica numérica
 
     # Condicionales anidados
-    numero_1 = 7
-    numero_2 = -2
+    numero_1 = 4
+    numero_2 = 4
 
     # Verifique si el numero_1 es mayor a 5
     #   --> En caso afirmativo, verifique si el numero_2
@@ -128,6 +128,17 @@ def ej3():
     #      verifique si el numero_2 es mayor a 5
     #       --> En caso afirmativo imprima en pantalla "Resp=3"
     #       --> En caso negativo imprima en pantalla "Resp=4"
+
+    if numero_1 > numero_2:
+        if numero_2 > 0:
+            print("Respt=1")
+        else:
+            print("Respt=2")
+    elif numero_1 < 5:
+        if numero_2 > 5:
+            print("Respt=3")
+        else:
+            print("respt=4")
 
     # Verifique la calificación de un estudiante según su
     # puntaje en un examen
@@ -170,7 +181,7 @@ def ej4():
 if __name__ == '__main__':
     print("Bienvenidos a otra clase de Inove con Python")
     #ej1()
-    ej2()
-    #ej3()
+    #ej2()
+    ej3()
     #ej4()
 
