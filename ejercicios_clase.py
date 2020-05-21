@@ -24,19 +24,42 @@ def ej1():
 
     numero_2 = int(input('Ingrese el segundo número:\n'))
     
+
+
     # Compare cual de los dos números es mayor
+    if numero_1 > numero_2:
+        print("El primer numero ingresado es el mayor")
+    else:
+        print("El segundo numero ingresado es el mayor")
+
+    
+
     # Imprima en pantalla según corresponda
 
     # Verifique si el numero_1 positivo, negativo o cero
     # Imprima el resultado en cada caso
 
-
+    if numero_1 > 0:
+        print("El primer numero ingresado es positivo")
+    elif numero_1 <0:
+        print("El primer numero ingresado es negativo")
+    else:
+        print("El primer numero ingresado es cero")
+    
     # Verifique si el numero_1 es mayor a 0 y menor a 100
     # Imprima en pantalla si se cumple o no la condición
+
+    if numero_1 > 0 and numero_1 < 100:
+        print("El primer numero ingresado esta en el rango de 1 y 99")
 
     # Verifique si el numero_1 es menor a 10 o el numero_2
     # es mayor a -2
     # Imprima en pantalla si se cumple o no la condición
+    if numero_1 < 10 or numero_2 > -2:
+        print("Cumple la condicion de que el numero 1 sea menor a 10 o el segundo numero sea mayor a -2")
+    else:
+        print("No cumple con la condicion. El primer numero ingresado es mayor a 10 o el segundo numero es menor a -2")
+
 
 def ej2():
     # Ejemplos variables de texto
@@ -124,7 +147,7 @@ def ej4():
 
 if __name__ == '__main__':
     print("Bienvenidos a otra clase de Inove con Python")
-    #ej1()
+    ej1()
     #ej2()
     #ej3()
     #ej4()
