@@ -142,16 +142,26 @@ def ej3():
 
     # Verifique la calificación de un estudiante según su
     # puntaje en un examen
-    puntaje = 70
-
+    puntaje = 40
+    
     # Si el puntaje es mayor igual a 90 --> imprimir A
     # Si el puntaje es mayor igual a 80 --> imprimir B
     # Si el puntaje es mayor igual a 70 --> imprimir C
     # Si el puntaje es mayor igual a 60 --> imprimir D
     # Si el puntaje es manor a  60      --> imprimir F
-
+    if puntaje >= 90:
+        print("A")
+    elif puntaje >=80 and puntaje < 90:
+        print("B")
+    elif puntaje >=70 and puntaje < 80:
+        print("C")
+    elif puntaje >= 60 and puntaje <= 70:
+        print("D")
+    else:
+        print("F")
     # Debe imprimir en pantalla la calificacion
     # Utilizar "if" anidados
+
 
 
 
