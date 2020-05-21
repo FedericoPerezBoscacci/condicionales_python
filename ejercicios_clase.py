@@ -73,23 +73,45 @@ def ej2():
 
     # Compare cual de las dos palabras es mayor (alfabéticamente)
     # Imprima en pantalla según corresponda
+    if texto_1 > texto_2:
+        print("El primer texto es mayor alfabeticamente")
+    else:
+        print("El segundo texto es mayor alfabeticamente")
 
     # Compare cual de las dos palabras tiene mayor
     # cantidad de letras
     # Imprima en pantalla según corresponda
+    if (len(texto_1) > len(texto_2)):
+        print("El primer texto ingresado tiene mayor cantidad de letras")
+    else:
+        print("El segundo texto ingresado tiene mayor cantidad de letras")
 
     # Verifique si la primera letra de la primera palabra
     # es mayor a la primera letra de la segunda palabra
     # Imprima en pantalla según corresponda
+    if (texto_1[0] > texto_2[0]):
+        print("El primer caracter del primer texto es mas grande que el primer caracter de el segundo texto")
+    elif texto_1[0] == texto_2[0] :
+        print("Los primeros caracteres son identicos")
+    else:
+        print("No cumple. El primer caracter de la primer palabra no es mayor que el primer caracter de la segunda palabra")
 
     copia_texto_1 = texto_1  # Copia de la variable texto_1
 
     # Verifique que copia_texto_1 es igual a texto_1
     # Imprima en pantalla según corresponda
+    if copia_texto_1 == texto_1:
+        print("copia texto 1 es igual a texto 1")
+    else:
+        print("No son iguales texto 1 y copia texto 1")
 
     # Verifique que copia_texto_1 es distinta a texto_2
     # Imprima en pantalla según corresponda
-
+    if copia_texto_1 != texto_2:
+        print("Copia texto 1 es diferente a texto 2")
+    else:
+        print("Copia texto 1 y texto 2 son iguales")
+        
 def ej3():
     # Ejercicios de práctica numérica
 
@@ -147,8 +169,8 @@ def ej4():
 
 if __name__ == '__main__':
     print("Bienvenidos a otra clase de Inove con Python")
-    ej1()
-    #ej2()
+    #ej1()
+    ej2()
     #ej3()
     #ej4()
 
