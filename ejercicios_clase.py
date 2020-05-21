@@ -168,16 +168,32 @@ def ej3():
 def ej4():
     # Ejemplos variables de texto
 
-    texto_1 = '5'
-    texto_2 = '7'
+    texto_1 = '2'
+    texto_2 = '2'
 
     # Verifique cual cual de los dos textos es mayor alfabéticamente
     # Imprima en pantalla según corresponda
+    if texto_1 > texto_2:
+        print("el texto 1 es mayor al texto 2")
+    elif texto_1 == texto_2:
+        print("los textos son iguales")
+    else:
+        print("El texto 2 es mayor al texto 1")
 
     # Transforma esas variables tipo texto y almacénalas
     # en nuevas variables númericas (int)
+    numero_1 = int(texto_1) 
+    numero_2 = int(texto_2)
+
     # Repita el proceso, ¿Cuál de las nuevas variables es mayor?
     # Imprima en pantalla según corresponda
+    if  numero_1 > numero_2:
+        print("El texto 1 es mayor")
+    elif numero_1 == numero_2:
+        print("Los textos son identicos")
+    else:
+        print("Texto 2 es mayor que texto 1")
+    
 
     # Para pensar!
     # ¿Por qué cree que texto_2 es mayor a texto_1?
@@ -192,6 +208,6 @@ if __name__ == '__main__':
     print("Bienvenidos a otra clase de Inove con Python")
     #ej1()
     #ej2()
-    ej3()
-    #ej4()
+    #ej3()
+    ej4()
 
