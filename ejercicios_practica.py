@@ -48,6 +48,27 @@ def ej2():
     Para cada caso imprimir el resultado en pantalla.
     
   '''
+  print("Ingrese el primer entero")
+  num_1 = int(input())
+  print("Ingrese el segundo entero")
+  num_2 = int(input())
+  print("Ingrese el tercer entero")
+  num_3 = int(input())
+
+  if (num_1 % 2) == 0:
+    print("El primer entero es par")
+  else:
+    print("El primer entero es impar")
+  
+  if(num_2 % 2) == 0:
+    print("El segundo entero es par")
+  else:
+    print("El segundo entero es impar")
+  
+  if (num_3 % 2) == 0:
+    print("El tercero entero es par")
+  else:
+    print("El tercero entero es impar")
 
 def ej3():
     # Ejercicios de práctica con números
@@ -101,8 +122,8 @@ def ej5():
 
 if __name__ == '__main__':
     print("Ejercicios de práctica")
-    ej1()
+    #ej1()
     #ej2()
-    #ej3()
+    ej3()
     #ej4()
     #ej5()
