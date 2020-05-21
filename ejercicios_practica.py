@@ -88,7 +88,40 @@ def ej3():
     
 
     '''
+    print("Ingrese el primer numero a calcular: ")
+    num_1 = float(input(""))
+    print("Ingrese el segundo numero a calcular")
+    num_2 = float(input())
 
+    print("Ingrese la operacion que desea realizar con el simbolo correspondiente:")
+    print("-Suma ( + )");print("Resta ( - )");print("Multiplicacion ( * )");print("Division ( / )");print("Exponencial (**)")
+    opcion = str(input())
+
+    if opcion == "+":
+      resultado = num_1 + num_2
+      print("El resultado es: {}".format(resultado))
+
+    elif opcion == "-":
+      resultado = num_1 - num_2
+      print("El resultado es: {}".format(resultado))
+
+    elif opcion == "*":
+      resultado = num_1 * num_2
+      print("El resultado es: {}".format(resultado))
+    
+    elif opcion == "/":
+      resultado = num_1 / num_2
+      print("El resultado es: {}".format(resultado))
+
+    elif opcion == "**":
+      resultado = num_1 ** num_2
+      print("El resultado es: {}".format(resultado))
+    
+    else:
+      print("No esta indicando una operacion valida")
+
+
+    
 def ej4():
     # Ejercicios de práctica con cadenas
     
@@ -124,6 +157,6 @@ if __name__ == '__main__':
     print("Ejercicios de práctica")
     #ej1()
     #ej2()
-    ej3()
+    #ej3()
     #ej4()
     #ej5()
