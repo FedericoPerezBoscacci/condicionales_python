@@ -23,6 +23,20 @@ def ej1():
     si el resultado es positivo, negativo o cero.
         
     '''
+    print("Ingrese el primer numero")
+    numero_1 = int(input())
+    print("Ingrese el segundo numero")
+    numero_2 = int(input())
+
+    resultado = numero_1 - numero_2
+
+    if resultado > 0:
+      print("La diferencia entre los numeros es positiva")
+    elif resultado == 0:
+      print("La diferencia entre los numeros es 0")
+    else:
+      print("La diferencia entre los numeros es negativa")
+
 
 def ej2():
 # Ejercicios de práctica con números
