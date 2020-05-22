@@ -139,6 +139,71 @@ def ej4():
 
   '''
 
+    print("Ingrese la primer palabra")
+    palabra1 = str(input())
+    print("Ingrese la segunda palabra")
+    palabra2 = str(input())
+    print("Ingrese la tercer palabra")
+    palabra3 = str(input())
+
+    print("Para ordenar las palabras por orden alfabetico pulsar 1" );print("Para ordenar las palabras por cantidad de letras pulsar 2")
+    opcion = int(input())
+    
+    if opcion == 1 :
+      
+      if (palabra1 > palabra2) and (palabra2 > palabra3):
+        print("De mayor a menor: {} - {} - {}".format(palabra1,palabra2,palabra3)) #caso 1-2-3
+
+      elif (palabra1 > palabra2) and (palabra3 > palabra2):
+        print("De mayor a menor: {} - {} -{}".format(palabra1,palabra3,palabra2)) #caso 1-3-2
+
+      elif (palabra3 > palabra1) and (palabra1 > palabra2):
+        print("De mayor a menor: {} - {} - {}".format(palabra3,palabra1,palabra2)) #caso 3-1-2
+
+      elif (palabra3 > palabra2) and (palabra2 > palabra1):
+        print("De mayor a menor: {} - {} - {}".format(palabra3,palabra2,palabra1)) # caso 3-2-1
+
+      elif (palabra2 > palabra3) and (palabra3 > palabra1):
+        print("De mayor a menor: {} - {} - {}".format(palabra2,palabra3,palabra1)) #caso 2-3-1
+
+      elif (palabra2 > palabra1) and (palabra1 > palabra3):
+        print("De mayor a menor: {} - {} -{}".format(palabra2,palabra1,palabra3)) #caso 2-1-3
+
+      else:
+        print("Las tres palabras palabras son identicas")
+    
+    elif opcion == 2:
+      cant_palabra1 = len(palabra1)
+      cant_palabra2 = len(palabra2)
+      cant_palabra3 = len(palabra3)
+
+      if (cant_palabra1 > cant_palabra2) and (cant_palabra2 > cant_palabra3):
+        print("De mayor a menor: {} - {} - {}".format(palabra1,palabra2,palabra3))  ## caso 1 -2 -3
+
+      elif (cant_palabra1 > cant_palabra2) and (cant_palabra3 > cant_palabra2):                    ## caso 1 - 3- 2
+        print("De mayor a menor: {} - {} -{}".format(palabra1,palabra3,palabra2)) 
+
+      elif (cant_palabra3 > cant_palabra1) and (cant_palabra1 > cant_palabra2):                    ## caso 3 - 1 -2
+        print("De mayor a menor: {} - {} - {}".format(palabra3,palabra1,palabra2))
+
+      elif (cant_palabra3 > cant_palabra2) and (cant_palabra2 > cant_palabra1):                     ##caso 3-2-1
+        print("De mayor a menor: {} - {} - {}".format(palabra3,palabra2,palabra1))
+
+      elif (cant_palabra2 > cant_palabra3) and (cant_palabra3 > cant_palabra1):                      ##caso 2-3-1
+        print("De mayor a menor: {} - {} - {}".format(palabra2,palabra3,palabra1))
+
+      elif (cant_palabra2 > cant_palabra1) and (cant_palabra1 > cant_palabra3):                       ##caso 2-1-3
+        print("De mayor a menor: {} - {} -{}".format(palabra2,palabra1,palabra3))
+
+      else:
+        print("Las tres palabras palabras son identicas tienen los mismo numeros de caracteres")
+    
+    else:
+      print("Los comandos ingresados son incorrectos")
+
+     
+
+    
 def ej5():
     # Ejercicios de práctica con números
        
@@ -158,5 +223,5 @@ if __name__ == '__main__':
     #ej1()
     #ej2()
     #ej3()
-    #ej4()
+    ej4()
     #ej5()
