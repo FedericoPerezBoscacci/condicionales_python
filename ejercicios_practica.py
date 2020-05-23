@@ -217,11 +217,53 @@ def ej5():
     En cada caso imprimir en pantalla el resultado  
 
     '''
+    print("Ingrese tres valores de temperatura.")
+    valor1 = int(input())
+    valor2 = int(input())
+    valor3 = int (input())
+
+    ## punto 1
+    
+    if (valor1 > valor2) and (valor1 > valor2):
+      print("La temperatura maxima ingresada es: {}".format(valor1))
+    
+    elif (valor2 > valor3) and (valor2 > valor1):
+      print("La temperatura maxima ingresada es: {}".format(valor2))
+    
+    elif (valor3 > valor1) and (valor3 > valor2):
+      print("la temperatura maxima ingresada es: {}".format(valor3))
+    
+    else:
+      print("las temperaturas son iguales o incorrectas.")
+
+   ##punto 2
+
+    if (valor1 < valor2) and (valor1 < valor2):
+      print("La temperatura minima ingresada es: {}".format(valor1))
+    
+    elif (valor2 < valor3) and (valor2 < valor1):
+      print("La temperatura minima ingresada es: {}".format(valor2))
+    
+    elif (valor3 < valor1) and (valor3 < valor2):
+      print("la temperatura minima ingresada es: {}".format(valor3))
+
+    #Punto 3
+
+    promedio = (valor1 + valor2 + valor3) / 3
+    print("El promedio de las temperaturas es de: {}".format(promedio))
+
+
+
+
+
+
+    
+
 
 if __name__ == '__main__':
     print("Ejercicios de práctica")
     #ej1()
     #ej2()
     #ej3()
-    ej4()
-    #ej5()
+    #ej4()
+    ej5()
